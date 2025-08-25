@@ -5,18 +5,20 @@
   <title>Terms of Use — Passport Photo Maker (Ays Labs)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Terms of Use for Passport Photo Maker by Ays Labs." />
-  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="./terms.html" />
   <style>
     :root{
       --bg:#0b0f14;
-      --card:#121821;
+      --card:#111821;
       --text:#e8eef6;
-      --muted:#b7c3d1;
+      --muted:#8b97a7;
       --accent:#60a5fa;
       --accent-2:#22c55e;
       --border:#1f2937;
       --danger:#ef4444;
       --link:#93c5fd;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius:14px;
     }
     @media (prefers-color-scheme: light){
       :root{
@@ -25,184 +27,130 @@
         --text:#0f172a;
         --muted:#334155;
         --accent:#2563eb;
-        --accent-2:#16a34a;
-        --border:#e5e7eb;
-        --danger:#dc2626;
+        --accent-2:#15803d;
+        --border:#e2e8f0;
+        --danger:#b91c1c;
         --link:#1d4ed8;
+        --shadow: 0 10px 30px rgba(2,6,23,.08);
       }
     }
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue","Noto Sans",Arial,"Apple Color Emoji","Segoe UI Emoji";}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji;line-height:1.6;}
+    .wrap{max-width:900px;margin:40px auto;padding:0 20px;}
+    header.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;}
+    h1{margin:0 0 6px;font-size:clamp(26px,4vw,36px);}
+    .meta{color:var(--muted);font-size:.95rem;}
+    section.card{margin-top:18px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;}
+    h2{margin:0 0 10px;font-size:clamp(20px,3vw,26px);}
+    h3{margin:18px 0 8px;font-size:1.05rem}
     a{color:var(--link);text-decoration:none}
     a:hover{text-decoration:underline}
-    .wrap{max-width:960px;margin:0 auto;padding:32px 20px}
-    header{margin-bottom:24px}
-    header h1{margin:0 0 6px 0;font-size:clamp(24px,3vw,34px)}
-    header .meta{color:var(--muted)}
-    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;margin:16px 0}
-    h2{font-size:1.35rem;margin:24px 0 8px}
-    h3{font-size:1.05rem;margin:18px 0 6px}
-    ul,ol{padding-left:22px}
-    .toc{padding:14px 16px}
-    .btns a{display:inline-block;margin-right:12px;padding:8px 12px;border:1px solid var(--border);border-radius:10px}
-    footer{margin-top:28px;color:var(--muted);font-size:.95rem}
-    .notice{border-left:4px solid var(--accent);padding:12px 14px;background:color-mix(in oklab, var(--accent) 8%, transparent);border-radius:8px;margin:12px 0}
-    .warn{border-left:4px solid var(--danger);padding:12px 14px;background:color-mix(in oklab, var(--danger) 8%, transparent);border-radius:8px;margin:12px 0}
+    ul{padding-left:20px}
+    .note{padding:12px 14px;border-left:4px solid var(--accent);background:color-mix(in oklab, var(--accent) 10%, transparent);border-radius:10px}
+    code{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;background:rgba(148,163,184,.2);padding:.1rem .35rem;border-radius:6px}
+    footer{color:var(--muted);font-size:.9rem;margin:24px 0 60px}
   </style>
-
-  <!-- Structured data -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"TermsOfService",
-    "name":"Passport Photo Maker — Terms of Use",
-    "url":"https://ayscoding.github.io/passport-photo-maker-policy/terms.html",
-    "publisher":{"@type":"Organization","name":"Ays Labs"},
-    "inLanguage":"en-CA",
-    "datePublished":"2025-08-25",
-    "dateModified":"2025-08-25"
-  }
-  </script>
 </head>
 <body>
   <div class="wrap">
-    <header>
-      <div class="btns">
-        <a href="./index.html">Privacy Policy</a>
-      </div>
+
+    <header class="card">
       <h1>Terms of Use</h1>
-      <div class="meta">For: <strong>Passport Photo Maker</strong> · Publisher: <strong>Ays Labs</strong> · Effective: <time datetime="2025-08-25">August 25, 2025</time> · Governing law: Ontario, Canada</div>
+      <div class="meta">
+        App: <strong>Passport Photo Maker</strong> · Developer: <strong>Ays Labs</strong><br/>
+        Effective date: <time datetime="2025-08-25">Aug 25, 2025</time> · Contact: <a href="mailto:ayslabs.dev@gmail.com">ayslabs.dev@gmail.com</a>
+      </div>
     </header>
 
-    <section class="card toc" aria-labelledby="toc">
-      <h2 id="toc">Contents</h2>
-      <ol>
-        <li><a href="#acceptance">Acceptance of Terms</a></li>
-        <li><a href="#description">Service Description</a></li>
-        <li><a href="#local-processing">On‑Device Processing (No Cloud Upload)</a></li>
-        <li><a href="#license">License to Use the App</a></li>
-        <li><a href="#user-content">Your Content</a></li>
-        <li><a href="#free-paid">Free &amp; Rewarded Features; Paid Features</a></li>
-        <li><a href="#responsibilities">Your Responsibilities &amp; Safety</a></li>
-        <li><a href="#prohibited">Prohibited Conduct</a></li>
-        <li><a href="#third-parties">Third‑Party Services &amp; Links</a></li>
-        <li><a href="#ip">Intellectual Property</a></li>
-        <li><a href="#warranty">Warranty Disclaimer</a></li>
-        <li><a href="#liability">Limitation of Liability</a></li>
-        <li><a href="#indemnity">Indemnity</a></li>
-        <li><a href="#termination">Suspension &amp; Termination</a></li>
-        <li><a href="#changes">Changes to These Terms</a></li>
-        <li><a href="#governing-law">Governing Law &amp; Dispute Resolution</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ol>
+    <section class="card">
+      <h2>1) Acceptance</h2>
+      <p>By installing or using Passport Photo Maker (“App”), you agree to these Terms of Use (“Terms”). If you do not agree, do not use the App.</p>
+      <p>These Terms apply worldwide. Your local consumer rights still apply and are not limited by these Terms.</p>
+      <p class="note">See the <a href="./index.html">Privacy Policy</a> for how the App and ad partners handle data.</p>
     </section>
 
-    <section class="card" id="acceptance">
-      <h2>1) Acceptance of Terms</h2>
-      <p>These Terms of Use (“<strong>Terms</strong>”) are a legal agreement between you (“<strong>you</strong>”, “<strong>user</strong>”) and <strong>Ays Labs</strong> (“<strong>we</strong>”, “<strong>us</strong>”, “<strong>our</strong>”) governing your use of the <strong>Passport Photo Maker</strong> mobile application (the “<strong>App</strong>”). By installing or using the App, you agree to these Terms and our <a href="./index.html">Privacy Policy</a>. If you do not agree, do not use the App.</p>
-      <p class="notice">General audience: the App is intended for general use. If you are under 13, use the App only with a parent/guardian and do not provide personal information.</p>
-    </section>
-
-    <section class="card" id="description">
-      <h2>2) Service Description</h2>
-      <p>The App helps you create passport/ID style photos. You can capture a photo with your device camera or select one from your gallery, then adjust, crop, and export results.</p>
-      <p class="warn"><strong>No guarantee of acceptance:</strong> Requirements differ by country and change over time. The App does not guarantee that any photo will be accepted by a government, agency, or third party. Always verify and follow the latest official guidelines for your jurisdiction.</p>
-    </section>
-
-    <section class="card" id="local-processing">
-      <h2>3) On‑Device Processing (No Cloud Upload)</h2>
-      <p>Photo processing (cropping, sizing, background replacement/whitening, edge smoothing, sheet/PDF creation) occurs on your device. We do not upload your photos to our servers. Third‑party SDKs (e.g., advertising) may collect device/usage data as described in the <a href="./index.html">Privacy Policy</a>.</p>
-    </section>
-
-    <section class="card" id="license">
-      <h2>4) License to Use the App</h2>
-      <p>Subject to these Terms, we grant you a limited, personal, non‑exclusive, non‑transferable, revocable license to install and use the App for your own non‑commercial purpose on a device you own or control. Any commercial use (e.g., operating a paid photo booth or service) requires our prior written consent.</p>
-    </section>
-
-    <section class="card" id="user-content">
-      <h2>5) Your Content</h2>
-      <p>You retain ownership of photos and other content you input into the App. You are solely responsible for obtaining any permissions needed to use images of other people and for complying with applicable laws. If you choose to share content with us (e.g., by email for support), you grant us a limited license to use that content solely to provide support and improve functionality.</p>
-    </section>
-
-    <section class="card" id="free-paid">
-      <h2>6) Free &amp; Rewarded Features; Paid Features</h2>
-      <h3>Free features &amp; ads</h3>
-      <p>Some features are free and supported by advertising (e.g., Google AdMob). You may see banners, interstitials, or rewarded ads. Rewarded ads can temporarily unlock certain features or remove limits for the current session or image.</p>
-      <h3>Paid features (if offered)</h3>
-      <p>We may offer optional paid upgrades (one‑time purchase or subscriptions) via your app store. Prices may change prospectively. Refunds, if any, are handled under the store’s policies or as required by law. Attempts to bypass payment or reward logic are prohibited.</p>
-    </section>
-
-    <section class="card" id="responsibilities">
-      <h2>7) Your Responsibilities &amp; Safety</h2>
+    <section class="card">
+      <h2>2) What the App Does</h2>
+      <p>The App helps you create passport-style photos: capture or pick a photo, remove background, crop to official sizes, optionally smooth edges, and export your result or a printable PDF sheet. Image processing happens on your device.</p>
+      <h3>Ads & unlocks</h3>
       <ul>
-        <li>Use the App safely; do not use it while driving or operating machinery.</li>
-        <li>Comply with applicable laws and photo standards in your country.</li>
-        <li>If using images of others, obtain appropriate permissions.</li>
-        <li>Parents/guardians should supervise children’s use of the App and device.</li>
+        <li>The App is free and supported by advertising (Google AdMob). Some actions (e.g., save/share/print) may unlock after viewing an ad. Ad availability is not guaranteed.</li>
+        <li>No paid features or subscriptions are offered at this time. If paid options are added later, the Terms will be updated and shown in-app.</li>
       </ul>
     </section>
 
-    <section class="card" id="prohibited">
-      <h2>8) Prohibited Conduct</h2>
+    <section class="card">
+      <h2>3) Permissions & Connectivity</h2>
       <ul>
-        <li>Reverse engineering, copying, reselling, or creating derivative works of the App except as permitted by law.</li>
-        <li>Interfering with ad delivery, rewarded flows, or payment mechanisms.</li>
-        <li>Using automated tools or scraping without written permission.</li>
-        <li>Using the App to violate rights of others or any law/regulation.</li>
+        <li><b>Camera</b> – take a photo within the App.</li>
+        <li><b>Photos/Media</b> – pick a photo from your gallery.</li>
+        <li><b>Network</b> – load ads and check connectivity (no photo uploads to Ays Labs).</li>
       </ul>
+      <p>Granting these permissions is optional, but required for related features to work.</p>
     </section>
 
-    <section class="card" id="third-parties">
-      <h2>9) Third‑Party Services &amp; Links</h2>
-      <p>The App integrates third‑party services (e.g., Google AdMob). Those services are governed by their own terms and privacy policies. We are not responsible for third‑party content, products, or services accessible via links in the App.</p>
+    <section class="card">
+      <h2>4) Your Use of the App</h2>
+      <h3>Personal, non-commercial license</h3>
+      <p>Ays Labs grants you a revocable, non-exclusive, non-transferable license to use the App for personal and non-commercial purposes. Commercial use (e.g., offering paid photo services using the App) requires prior written permission from Ays Labs.</p>
+
+      <h3>Your content</h3>
+      <p>You keep ownership of photos you import. If you import someone else’s photo, you are responsible for having the right to use it.</p>
+
+      <h3>Prohibited activities</h3>
+      <ul>
+        <li>Using the App for illegal purposes or to infringe privacy or intellectual-property rights.</li>
+        <li>Reverse-engineering, modifying, or bypassing ad-gating or feature controls.</li>
+        <li>Automating or scraping the App, or interfering with its normal operation.</li>
+        <li>Misrepresenting output as government-issued or officially certified.</li>
+      </ul>
+
+      <h3>Safety & suitability</h3>
+      <p>The App is not an official government service. It aims to match listed size rules, but requirements can change. Always verify your country’s current specs and print quality before submission.</p>
     </section>
 
-    <section class="card" id="ip">
-      <h2>10) Intellectual Property</h2>
-      <p>The App, its code, design, logos, and other materials are protected by intellectual property laws and are owned by Ays Labs or its licensors. Except for the limited license above, no rights are granted. All trademarks are the property of their respective owners.</p>
+    <section class="card">
+      <h2>5) Ads & Third-Party Services</h2>
+      <p>The App shows ads from Google AdMob. Ad partners may collect device/usage data to show and measure ads. Manage ad personalization in your Google settings where available.</p>
+      <p>Links or content from third parties are not controlled by Ays Labs. Your use of those services is at your discretion and subject to their terms and privacy policies.</p>
+      <p>See <a href="./index.html">Privacy Policy</a> for details.</p>
     </section>
 
-    <section class="card" id="warranty">
-      <h2>11) Warranty Disclaimer</h2>
-      <p><strong>THE APP IS PROVIDED “AS IS” AND “AS AVAILABLE.”</strong> TO THE MAXIMUM EXTENT PERMITTED BY LAW, AYS LABS DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON‑INFRINGEMENT. WE DO NOT WARRANT THAT THE APP WILL BE ERROR‑FREE OR MEET YOUR REQUIREMENTS, OR THAT ANY PHOTO WILL BE ACCEPTED BY ANY AUTHORITY.</p>
+    <section class="card">
+      <h2>6) Intellectual Property</h2>
+      <p>The App’s name, icon, design, user interface, text, and code are owned by Ays Labs or respective rights holders. You may not copy, resell, or create derivative works from the App beyond what these Terms allow.</p>
     </section>
 
-    <section class="card" id="liability">
-      <h2>12) Limitation of Liability</h2>
-      <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, AYS LABS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR ANY LOSS OF DATA, PROFITS, OR REVENUE, ARISING FROM OR RELATED TO YOUR USE OF THE APP. OUR TOTAL LIABILITY FOR ANY CLAIM WILL NOT EXCEED THE AMOUNT YOU PAID (IF ANY) FOR THE APP IN THE 12 MONTHS BEFORE THE CLAIM OR CAD $15, WHICHEVER IS LESS.</p>
+    <section class="card">
+      <h2>7) Disclaimers</h2>
+      <p>The App is provided “as is”. To the fullest extent allowed by law, Ays Labs does not make warranties of any kind (including fitness for a particular purpose, non-infringement, or uninterrupted availability). You are responsible for ensuring the output meets your submission requirements.</p>
     </section>
 
-    <section class="card" id="indemnity">
-      <h2>13) Indemnity</h2>
-      <p>You agree to defend, indemnify, and hold harmless Ays Labs and its officers, directors, employees, and contractors from any claims, damages, liabilities, costs, and expenses (including reasonable legal fees) arising out of your use of the App, your content, or your violation of these Terms or any law.</p>
+    <section class="card">
+      <h2>8) Limitation of Liability</h2>
+      <p>To the extent permitted by law, Ays Labs will not be liable for indirect, incidental, special, consequential, or punitive damages, or any loss of data, profits, or opportunities arising from your use of the App. Where a limitation is not allowed, liability will be limited to the maximum extent permitted by law.</p>
     </section>
 
-    <section class="card" id="termination">
-      <h2>14) Suspension &amp; Termination</h2>
-      <p>We may suspend or terminate access to the App or particular features at any time, with or without notice, including where we believe you violated these Terms or to comply with law. Sections that by their nature should survive termination will survive.</p>
+    <section class="card">
+      <h2>9) Changes, Availability & Termination</h2>
+      <p>The App, features, ads/rewards, and these Terms may change from time to time. If you continue using the App after an update, you accept the updated Terms. Ays Labs may suspend or stop providing the App at any time.</p>
     </section>
 
-    <section class="card" id="changes">
-      <h2>15) Changes to These Terms</h2>
-      <p>We may update these Terms to reflect App changes or legal requirements. We will update the “Effective” date above. Your continued use after changes means you accept the revised Terms.</p>
+    <section class="card">
+      <h2>10) Governing Law</h2>
+      <p>Unless required otherwise by local law, these Terms are governed by the laws of Ontario, Canada, and applicable Canadian federal law.</p>
     </section>
 
-    <section class="card" id="governing-law">
-      <h2>16) Governing Law &amp; Dispute Resolution</h2>
-      <p>These Terms are governed by the laws of the Province of Ontario and the laws of Canada applicable therein, without regard to conflict‑of‑law rules. You agree to the exclusive jurisdiction and venue of the courts located in Ontario, Canada.</p>
-    </section>
-
-    <section class="card" id="contact">
-      <h2>17) Contact</h2>
+    <section class="card">
+      <h2>11) Contact</h2>
       <p>Questions about these Terms? Email <a href="mailto:ayslabs.dev@gmail.com">ayslabs.dev@gmail.com</a>.</p>
+      <p>Privacy Policy: <a href="./index.html">index.html</a></p>
     </section>
 
     <footer>
-      <p>&copy; <span id="y">2025</span> Ays Labs. All rights reserved.</p>
+      © <span id="y"></span> Ays Labs. All rights reserved.
     </footer>
   </div>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
